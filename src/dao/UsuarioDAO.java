@@ -35,7 +35,7 @@ public class UsuarioDAO {
     }
 
     public void atualizarUsuario(Usuario usuario) {
-        String sql = "UPDATE USUARIO SET NOME = ?, SOBRENOME = ?, SENHA = ?, EMAIL = ?, TELEFONE = ?, CARGO = ? WHERE ID = ?";
+        String sql = "UPDATE USUARIO SET NOME = ?, SOBRENOME = ?, SENHA = ?, EMAIL = ?, TELEFONE = ?, CARGO = ? WHERE USUARIO_ID = ?";
 
         Connection conn = null;
         PreparedStatement ps = null;
@@ -108,6 +108,4 @@ public class UsuarioDAO {
             throw new RuntimeException("Erro ao excluir o usuário: " + e.getMessage());
         }
     }
-
-
 }
