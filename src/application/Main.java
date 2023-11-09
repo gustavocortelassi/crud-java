@@ -25,7 +25,7 @@ public class Main {
         int op;
 
         do {
-            System.out.println("---------- MENU AMBIENTE-SE ----------");
+            System.out.println("---------- MENU: AMBIENTE-SE ----------");
             System.out.println("1 - Usuário");
             System.out.println("2 - Empresa");
             System.out.println("3 - Checklist");
